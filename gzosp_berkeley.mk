@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018 Ground Zero Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -26,11 +27,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/treble_common.mk)
 # Inherit from berkeley device
 $(call inherit-product, device/huawei/berkeley/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common GZOSP stuff.
+$(call inherit-product, vendor/gzosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := berkeley
-PRODUCT_NAME := lineage_berkeley
+PRODUCT_NAME := gzosp_berkeley
 PRODUCT_BRAND := Huawei
 PRODUCT_MODEL := berkeley
